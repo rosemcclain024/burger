@@ -1,0 +1,40 @@
+<h1>BANDS STUFF</h1>
+
+
+
+<h2>Bands You Wanna See</h2>
+<ul>
+  {{#each burger}}
+    {{#unless this.devoured}}
+    <form action="burgers/{{this.id}}" method="PUT">
+     <button type="submit" class="haventSeenYet" data-id="{{id}}" data-nowSeen="{{devoured}}">
+   {{ this.name}}
+     </button>
+    </form>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Bands You Have Already Seen</h2>
+<ul>
+  {{#each burger}}
+    {{#if this.devoured}}
+    <div> 
+        {{ this.name}}
+    </div>
+      {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Band</h2>
+<form action="/api/burgers" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Band Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+ 
+
+  <button type="submit">Add Band</button>
+</form>

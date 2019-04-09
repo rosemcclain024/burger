@@ -1,6 +1,6 @@
-INSERT INTO burgers (name) VALUES ('Vegan');
-INSERT INTO burgers (name) VALUES ('Bacon');
-INSERT INTO burgers (name, devoured) VALUES ('Veggie', true);
-INSERT INTO burgers (name, devoured) VALUES ('Macaroni', true);
-INSERT INTO burgers (name, devoured) VALUES ('Salmon', true);
-INSERT INTO burgers (name) VALUES ('Mushroom');
+INSERT INTO burgers (name) VALUES ('The 1975');
+INSERT INTO burgers (name) VALUES ('Queen');
+INSERT INTO burgers (name, devoured) VALUES ('Paramore', true);
+INSERT INTO burgers (name, devoured) VALUES ('Blink 182', true);
+INSERT INTO burgers (name, devoured) VALUES ('Turnover', true);
+INSERT INTO burgers (name) VALUES ('One Direction');
